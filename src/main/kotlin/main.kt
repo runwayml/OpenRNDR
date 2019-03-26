@@ -30,6 +30,9 @@ fun main() = application {
         Pair("leftKnee", "leftAnkle")
     )
 
+    //  These are the standard window size but elements are rendered in line with the source size / coordinates.
+    //  i.e. if  you are using a 1024x768 source, then OpenRNDR may render elements outside of this window size and
+    //  it should be adjusted with this in mind
     configure {
         width = 640
         height = 480
@@ -47,6 +50,7 @@ fun main() = application {
             }
         }
 
+        // These are the current defaults - it's worth checking your own port settings
         try {
             mSocket = IO.socket("http://localhost:3001/")
             mSocket.on("data", onNewMessage)
