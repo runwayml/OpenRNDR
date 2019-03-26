@@ -1,5 +1,5 @@
 // -- change the `group` and `version` to your likings
-group 'org.openrndr.template'
+group 'com.bateman.openrndr_runwayml_pose'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -53,25 +53,9 @@ dependencies {
     compile "org.openrndr:openrndr-extensions:$openrndrVersion"
     compile "org.openrndr:openrndr-filter:$openrndrVersion"
     compile "org.openrndr:openrndr-ffmpeg:$openrndrVersion"
+    compile "io.socket:socket.io-client:1.0.0"
 
-    // replace the following with functional slf4j library when using slf4j
     compile 'org.slf4j:slf4j-nop:1.7.25'
-
-    // orx (openrndr extra) https://github.com/openrndr/orx - openrndr extensions
-    //compile "com.github.openrndr.orx:orx-camera:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-compositor:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-filter-extension:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-integral-image:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-jumpflood:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-kdtree:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-mesh-generators:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-no-clear:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-noise:v$orxVersion"
-    //compile "com.github.openrndr.orx:orx-obj-loader:v$orxVersion"
-
-    // panel https://github.com/openrndr/panel - the openrndr ui library
-    //compile "com.github.openrndr:openrndr-panel:v$panelVersion"
-
 }
 
 compileKotlin {
