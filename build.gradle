@@ -62,7 +62,7 @@ compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-mainClassName = "TemplateProgramKt"
+mainClassName = "posenet"
 if (System.properties['os.name'].toLowerCase().contains('mac')) {
     applicationDefaultJvmArgs = ["-XstartOnFirstThread"]
 }
