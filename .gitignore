@@ -3,3 +3,4 @@ out
 video
 .idea
 .gradle
+ffmpegOutput.txt
