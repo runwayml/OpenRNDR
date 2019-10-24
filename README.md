@@ -15,7 +15,7 @@ This is a simple implementation of [OpenRNDR](http://https://openrndr.org) rende
 ![](images/posenet.png)
 
 
-* [Face Detection]() by [Ryan Bateman](http://boat.horse/) 🎉<br>
+* [Face Detection](https://github.com/runwayml/OpenRNDR/blob/master/src/main/kotlin/facedetect.kt) by [Ryan Bateman](http://boat.horse/) 🎉<br>
 Similiarly, this is a implementation of rendering the results outputted by the [Face Landmarks model](https://github.com/runwayml/processing/blob/master/posenet/posenet.pde), part of Davis E. King's dlib library. It again uses SocketIO to listen for emitted events and renders the faces. 
 ![](images/face_landmarks.png)
 
